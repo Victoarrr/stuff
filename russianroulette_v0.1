@@ -1,0 +1,40 @@
+package com.company;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        int bullet_count = 1;
+        int player_count = 6;
+        int player_number = 1;
+        int random = (int)(Math.random() * (6 - player_count) + 1);
+
+
+        while(player_count > 1){
+            System.out.println("Es leben noch " + player_count + " Spieler");   //Startnachricht
+            random = (int)(Math.random() * 6 - player_number + 2);             //Warscheinlichkeit wird berechnet
+
+            System.out.println(random);
+            System.out.println("");
+
+            if(random > 1){
+                System.out.println("Herzlichen Glückwunsch Spieler " + player_number + " du lebst.");
+                player_number++;
+            }
+            else{
+                System.out.println("Spieler " + player_number + " hat sich selbst exekutiert.");
+                System.out.println("Runde ist zuende");
+                break;
+            }
+
+
+
+
+
+        }
+
+
+
+        }
+    }
+
